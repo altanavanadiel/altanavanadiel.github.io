@@ -50,6 +50,15 @@
 				</div>
 				<a href="http://altana-vanadiel.com/About.html" class="w3-bar-item w3-button w3-mobile w3-black w3-hover-black w3-hover-text-red w3-right">About</a>
 				<a href="http://altana-vanadiel.com/contact.html" class="w3-bar-item w3-button w3-mobile w3-black w3-hover-black w3-hover-text-red w3-right">Contact</a>
+				<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+			</div>
+			<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+				<a href="#" class="w3-bar-item w3-button">Jobs</a>
+				<a href="#" class="w3-bar-item w3-button"><img src="./assets/icons/dungeons.png" alt="dungeons icon">&nbsp;Dungeons</a>
+				<a href="#" class="w3-bar-item w3-button"><img src="./assets/icons/trials.png" alt="trials icon">&nbsp;Trials</a>
+				<a href="#" class="w3-bar-item w3-button"><img src="./assets/icons/raids.png" alt="raids icon">&nbsp;Raids</a>
+				<a href="#" class="w3-bar-item w3-button">About</a>
+				<a href="#" class="w3-bar-item w3-button">Contact</a>
 			</div>
 		</div>
 		<!-- End Navigation Bar -->
@@ -69,5 +78,15 @@
 			</div>
 		</footer>
 		<!-- Footer End -->
+		<script>
+		function myFunction() {
+			var x = document.getElementById("demo");
+			if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			} else { 
+				x.className = x.className.replace(" w3-show", "");
+			}
+		}
+		</script>
 	</body>
 </html>
